@@ -12,12 +12,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Product extends BaseEntity {
+public class ProductCategory extends BaseEntity {
     private String name;
-    private String version;
-    private Long productCategoryId;
-    private Long productTypeid;
-    private Double premiumRate;
-    private String matrix;
-    private String createdBy;
+    private String description;
 }
