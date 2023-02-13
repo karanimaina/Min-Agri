@@ -9,10 +9,10 @@ public class FarmerDetailsDTO {
     private String maritalStatus;
     private String photo;
     private Long fieldAgentId;
-    private String nidAverification;
-    private String rlmaverification;
-    private String bankname;
+    private String needVerification;
+    private String rlmaVerification;
+    private String bankName;
     private String branch;
-    private String accountname;
-    private String accountnumber;
+    private String accountName;
+    private String accountNumber;
 }
