@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class SubsidyDTO {
-    String name;
-    Long producttypeid;
-    Long farmercategoryid;
-    Double rate;
+   private String name;
+    private Long producttypeid;
+    private Long farmerCategoryId;
+    private Double rate;
 }
