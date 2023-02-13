@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class OrgGroupDTO {
-    long groupid;
-    long organizationtypeid;
+   private long groupId;
+  private long organizationTypeId;
 }

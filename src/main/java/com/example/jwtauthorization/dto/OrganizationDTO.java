@@ -13,5 +13,5 @@ public class OrganizationDTO {
     private String registrationNumber;
     private String licenseNumber;
     private Long contactUserId;
-    private long id;
+
 }
