@@ -3,12 +3,11 @@ package com.example.jwtauthorization.dto;
 import lombok.Data;
 
 import java.util.Date;
-
 /**
- * Class name: RabbitUserCreation
- * Creater: wgicheru
- * Date:1/30/2020
- */
+ * @author Felix Maina
+ * @created 02/13/2023
+ **/
+
 @Data
 public class MessageBrokerUserCreation {
     private String firstname;

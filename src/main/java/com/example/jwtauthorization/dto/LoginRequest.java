@@ -3,8 +3,8 @@ package com.example.jwtauthorization.dto;
 import lombok.Data;
 
 /**
- * @author Alex Maina
- * @created 26/10/2022
+ * @author Felix Maina
+ * @created 02/13/2023
  **/
 @Data
 public class LoginRequest {
