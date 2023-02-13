@@ -1,5 +1,6 @@
 package com.example.jwtauthorization.repo;
 
+import com.example.jwtauthorization.model.products.ProductCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
