@@ -1,7 +1,10 @@
 package com.example.jwtauthorization.dto;
 
+import lombok.Data;
+
+@Data
 public class ProductLoadingDto {
-    long productid;
-    String name;
-    Double rate;
+    private long productId;
+    private String name;
+    private Double rate;
 }
