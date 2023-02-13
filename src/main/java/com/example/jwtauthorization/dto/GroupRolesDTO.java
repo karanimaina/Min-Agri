@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class GroupRolesDTO {
-    Long groupid;
-    Long[] roleid;
+    private Long groupid;
+    private Long[] roleid;
 
 }
