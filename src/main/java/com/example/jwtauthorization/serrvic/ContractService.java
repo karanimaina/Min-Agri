@@ -3,6 +3,7 @@ package com.example.jwtauthorization.serrvic;
 import com.example.jwtauthorization.dto.ContractMonitoringDto;
 import com.example.jwtauthorization.dto.FileDto;
 import com.example.jwtauthorization.exxceptions.ItemExistsException;
+import com.example.jwtauthorization.exxceptions.UserException;
 import com.example.jwtauthorization.model.products.ContractMonitoring;
 import com.example.jwtauthorization.repo.ContractMonitoringRepo;
 import lombok.RequiredArgsConstructor;
@@ -11,8 +12,11 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 @Service
@@ -72,7 +76,12 @@ public class ContractService  {
         contractMonitoring.setFileLocation(matrixpath);
         contractMonitoringRepo.save(contractMonitoring);
     }
+    private String saveFile(MultipartFile matrixfile, String filename) throws IOException {
+        String dir = System.getProperty("user.dir")+System.getProperty("file.separator")+"contracts";
 
+        Files.copy(matrixfile.getInputStream(), Paths.get(dir, filename));
+        return Paths.get(dir, filename).toAbsolutePath().toString();
+    }
 
      }
 
