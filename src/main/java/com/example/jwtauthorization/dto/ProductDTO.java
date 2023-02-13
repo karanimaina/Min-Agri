@@ -6,8 +6,8 @@ import lombok.Data;
 public class ProductDTO {
     String name;
     String version;
-    Long productcategoryid;
-    Long producttypeid;
-    Double premiumrate;
+    Long productCategoryId;
+    Long productTypeId;
+    Double premiumRate;
 
 }

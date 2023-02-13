@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class PasswordDTO {
-    String password;
-    String otp;
-    String nationalid;
+    private String password;
+    private String otp;
+    private String nationalId;
 }
