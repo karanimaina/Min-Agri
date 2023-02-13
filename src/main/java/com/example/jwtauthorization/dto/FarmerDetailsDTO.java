@@ -4,12 +4,12 @@ import lombok.Data;
 
 @Data
 public class FarmerDetailsDTO {
-    private Long userid;
-    private String locationid;
-    private String maritalstatus;
+    private Long userId;
+    private String locationId;
+    private String maritalStatus;
     private String photo;
-    private Long fieldagentid;
-    private String nidaverification;
+    private Long fieldAgentId;
+    private String nidAverification;
     private String rlmaverification;
     private String bankname;
     private String branch;

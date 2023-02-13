@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class CommissionDto {
-    String name;
-    Long financialItemId;
-    Double rate;
+    private  String name;
+    private Long financialItemId;
+    private Double rate;
 }
