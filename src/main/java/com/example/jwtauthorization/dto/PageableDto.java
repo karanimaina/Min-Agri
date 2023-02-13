@@ -7,7 +7,7 @@ import lombok.Data;
  * @created 27/10/2022
  **/
 @Data
-public class PageableWrapper {
+public class PageableDto {
     private long id;
     private int size;
     private int page;
