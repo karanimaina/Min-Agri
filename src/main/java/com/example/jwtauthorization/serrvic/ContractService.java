@@ -67,7 +67,11 @@ public class ContractService  {
         }
         throw new UserException("user is not authenticated to perform this operation");
     }
-
+    private void updateContractMatrixPath(Long contractid, String matrixpath) {
+        ContractMonitoring contractMonitoring = contractMonitoringRepo.findById(contractid).get();
+        contractMonitoring.setFileLocation(matrixpath);
+        contractMonitoringRepo.save(contractMonitoring);
+    }
 
 
      }
