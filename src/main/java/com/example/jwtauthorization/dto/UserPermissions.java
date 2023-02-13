@@ -7,5 +7,5 @@ import java.util.List;
 @Data
 public class UserPermissions {
    private String groupname;
-   private List roles;
+   private  List roles;
 }
