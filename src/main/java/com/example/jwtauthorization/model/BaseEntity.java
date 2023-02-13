@@ -11,9 +11,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Date;
-
-@Getter
-@Setter
 @MappedSuperclass
 public class BaseEntity {
     @Id
