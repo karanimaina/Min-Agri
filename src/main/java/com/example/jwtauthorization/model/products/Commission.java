@@ -1,5 +1,6 @@
-package com.example.jwtauthorization.model;
+package com.example.jwtauthorization.model.products;
 
+import com.example.jwtauthorization.model.BaseEntity;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
