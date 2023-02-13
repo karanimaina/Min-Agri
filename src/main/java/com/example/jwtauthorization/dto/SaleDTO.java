@@ -4,11 +4,11 @@ import lombok.Data;
 
 @Data
 public class SaleDTO {
-    Long farmerUserId;
-    Long productId;
-    Long farmId;
+    private Long farmerUserId;
+    private Long productId;
+    private Long farmId;
 
-    Double coverValue;
-    Double subsidyValue;
-    Double actualPay;
+    private Double coverValue;
+    private Double subsidyValue;
+    private Double actualPay;
 }
