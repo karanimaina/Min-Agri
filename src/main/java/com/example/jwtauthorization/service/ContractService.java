@@ -1,4 +1,4 @@
-package com.example.jwtauthorization.serrvic;
+package com.example.jwtauthorization.service;
 
 import com.example.jwtauthorization.dto.ContractMonitoringDto;
 import com.example.jwtauthorization.dto.FileDto;
@@ -78,7 +78,6 @@ public class ContractService  {
     }
     private String saveFile(MultipartFile matrixfile, String filename) throws IOException {
         String dir = System.getProperty("user.dir")+System.getProperty("file.separator")+"contracts";
-
         Files.copy(matrixfile.getInputStream(), Paths.get(dir, filename));
         return Paths.get(dir, filename).toAbsolutePath().toString();
     }
