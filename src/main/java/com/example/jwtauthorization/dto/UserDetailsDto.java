@@ -10,8 +10,8 @@ import lombok.Data;
  */
 @Data
 @AllArgsConstructor
-public class UserDetailsWrapper {
-    long userid;
+public class UserDetailsDto {
+    long userId;
     String email;
-    String phonenumber;
+    String phoneNumber;
 }

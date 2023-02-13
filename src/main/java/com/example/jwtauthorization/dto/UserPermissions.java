@@ -6,6 +6,6 @@ import java.util.List;
 
 @Data
 public class UserPermissions {
-    String groupname;
-    List roles;
+   private String groupname;
+   private List roles;
 }

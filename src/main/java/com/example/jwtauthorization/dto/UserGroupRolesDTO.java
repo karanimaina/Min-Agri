@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class UserGroupRolesDTO {
-    Long groupid;
-    Long userid;
+    private Long groupid;
+    private  Long userid;
 
 }
