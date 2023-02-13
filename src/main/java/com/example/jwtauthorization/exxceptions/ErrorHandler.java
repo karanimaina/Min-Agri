@@ -1,5 +1,4 @@
 package com.example.jwtauthorization.exxceptions;
-
 import com.example.jwtauthorization.commons.UniversalResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
