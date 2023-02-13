@@ -12,9 +12,14 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrganizationTypes extends BaseEntity {
-    String name;
-    String description;
+public class SeasonalForecast extends BaseEntity {
 
+    String district;
+    String season;
+    String rainfallrange;
+    String onsetdate;
+    String cessationdate;
+    String advisory;
 
 }
+
