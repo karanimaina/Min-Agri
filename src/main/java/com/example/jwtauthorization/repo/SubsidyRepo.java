@@ -1,5 +1,6 @@
 package com.example.jwtauthorization.repo;
 
+import com.example.jwtauthorization.model.products.Subsidy;
 import com.minagri.app.entities.products.Subsidy;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
