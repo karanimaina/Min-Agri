@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class UserStats {
-    long registeredusers, activeusers, inactiveusers, newusers;
+    private long registeredUsers, activeUsers, inactiveUsers, newUsers;
 }
