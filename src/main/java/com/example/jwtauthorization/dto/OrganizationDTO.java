@@ -5,13 +5,13 @@ import lombok.Data;
 @Data
 public class OrganizationDTO {
     private String name;
-    private Long orgtype;
-    private Long locationid;
+    private Long orgType;
+    private Long locationId;
     private String website;
     private String email;
-    private String phonenumber;
-    private String registrationnumber;
-    private String licensenumber;
-    private Long contactuserid;
+    private String phoneNumber;
+    private String registrationNumber;
+    private String licenseNumber;
+    private Long contactUserId;
     private long id;
 }
