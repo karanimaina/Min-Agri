@@ -1,11 +1,14 @@
 package com.example.jwtauthorization.service;
 
 import com.example.jwtauthorization.dto.OrganizationDTO;
+import com.example.jwtauthorization.exxceptions.ItemExistsException;
 import com.example.jwtauthorization.exxceptions.ItemNotFound;
 import com.example.jwtauthorization.model.models.Organization;
 import com.example.jwtauthorization.repo.OrganizationRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -15,7 +18,7 @@ public class OrganizationService {
         //check that organization does not exist
         Organization organization = organizationRepo.findByName(organizationDTO.getName());
         if (organization != null){
-            throw new ItemNotFound("the organization already exist");
+            throw new ItemExistsException("the organization already exist");
         }
 
         Organization organizations = new Organization();
@@ -32,5 +35,22 @@ public class OrganizationService {
         return organizations;
     }
 
+    public Organization editOrganization(OrganizationDTO organizationDTO) {
+        Organization organizations = organizationRepo.findByName(organizationDTO.getName());
+      if (organizations == null){
+          throw  new ItemNotFound("Organisation not found");
+      }
+        organizations.setName(organizationDTO.getName());
+        organizations.setOrganizationType(organizations.getOrganizationType());
+        organizations.setLocationId(organizationDTO.getLocationId());
+        organizations.setWebsite(organizationDTO.getWebsite());
+        organizations.setEmail(organizations.getEmail());
+        organizations.setPhoneNumber(organizationDTO.getPhoneNumber());
+        organizations.setRegistrationNumber(organizations.getRegistrationNumber());
+        organizations.setLicenseNumber(organizations.getLicenseNumber());
+        organizations.setContactUserId(organizations.getContactUserId());
+        organizations = organizationRepo.save(organizations);
+        return  organizations;
+    }
 
 }
