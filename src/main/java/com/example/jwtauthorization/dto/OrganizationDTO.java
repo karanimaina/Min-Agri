@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class OrganizationDTO {
     private String name;
-    private Long orgType;
+    private Long organisationType;
     private Long locationId;
     private String website;
     private String email;
