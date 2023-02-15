@@ -13,12 +13,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class NextOfKins extends BaseEntity {
-    private Long userid;
-    private String locationid;
+    private Long userId;
+    private String locationId;
     private String relationship;
-    private String phonenumber;
+    private String phoneNumber;
     private Long email;
-    private String nationalidnumber;
+    private String nationalIdNumber;
 
 
 }
